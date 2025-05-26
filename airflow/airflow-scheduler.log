@@ -1,0 +1,57 @@
+2025-05-26 22:12:26,122 INFO - Task context logging is enabled
+2025-05-26 22:12:26,123 INFO - Loaded executor: SequentialExecutor
+2025-05-26 22:12:26,194 INFO - Starting the scheduler
+2025-05-26 22:12:26,196 INFO - Processing each file at most -1 times
+2025-05-26 22:12:26,205 INFO - Launched DagFileProcessorManager with pid: 26872
+2025-05-26 22:12:26,209 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-05-26 22:12:26,212 INFO - Configured default timezone UTC
+2025-05-26 22:13:15,206 INFO - 1 tasks up for execution:
+	<TaskInstance: currency_etl_dag.fetch_and_store_currency manual__2025-05-26T19:13:14.862454+00:00 [scheduled]>
+2025-05-26 22:13:15,207 INFO - DAG currency_etl_dag has 0/16 running and queued tasks
+2025-05-26 22:13:15,207 INFO - Setting the following tasks to queued state:
+	<TaskInstance: currency_etl_dag.fetch_and_store_currency manual__2025-05-26T19:13:14.862454+00:00 [scheduled]>
+2025-05-26 22:13:15,210 INFO - Sending TaskInstanceKey(dag_id='currency_etl_dag', task_id='fetch_and_store_currency', run_id='manual__2025-05-26T19:13:14.862454+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default
+2025-05-26 22:13:15,210 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'currency_etl_dag', 'fetch_and_store_currency', 'manual__2025-05-26T19:13:14.862454+00:00', '--local', '--subdir', 'DAGS_FOLDER/currency_dag.py']
+2025-05-26 22:13:15,220 INFO - Executing command: ['airflow', 'tasks', 'run', 'currency_etl_dag', 'fetch_and_store_currency', 'manual__2025-05-26T19:13:14.862454+00:00', '--local', '--subdir', 'DAGS_FOLDER/currency_dag.py']
+2025-05-26 22:13:19,771 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='currency_etl_dag', task_id='fetch_and_store_currency', run_id='manual__2025-05-26T19:13:14.862454+00:00', try_number=1, map_index=-1)
+2025-05-26 22:13:19,776 INFO - TaskInstance Finished: dag_id=currency_etl_dag, task_id=fetch_and_store_currency, run_id=manual__2025-05-26T19:13:14.862454+00:00, map_index=-1, run_start_date=2025-05-26 19:13:18.501647+00:00, run_end_date=2025-05-26 19:13:19.252946+00:00, run_duration=0.751299, state=up_for_retry, executor_state=success, try_number=1, max_tries=1, job_id=19, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator, queued_dttm=2025-05-26 19:13:15.208488+00:00, queued_by_job_id=18, pid=26948
+2025-05-26 22:17:33,951 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-05-26 22:18:19,579 INFO - 1 tasks up for execution:
+	<TaskInstance: currency_etl_dag.fetch_and_store_currency manual__2025-05-26T19:13:14.862454+00:00 [scheduled]>
+2025-05-26 22:18:19,579 INFO - DAG currency_etl_dag has 0/16 running and queued tasks
+2025-05-26 22:18:19,580 INFO - Setting the following tasks to queued state:
+	<TaskInstance: currency_etl_dag.fetch_and_store_currency manual__2025-05-26T19:13:14.862454+00:00 [scheduled]>
+2025-05-26 22:18:19,581 INFO - Sending TaskInstanceKey(dag_id='currency_etl_dag', task_id='fetch_and_store_currency', run_id='manual__2025-05-26T19:13:14.862454+00:00', try_number=2, map_index=-1) to executor with priority 1 and queue default
+2025-05-26 22:18:19,581 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'currency_etl_dag', 'fetch_and_store_currency', 'manual__2025-05-26T19:13:14.862454+00:00', '--local', '--subdir', 'DAGS_FOLDER/currency_dag.py']
+2025-05-26 22:18:19,590 INFO - Executing command: ['airflow', 'tasks', 'run', 'currency_etl_dag', 'fetch_and_store_currency', 'manual__2025-05-26T19:13:14.862454+00:00', '--local', '--subdir', 'DAGS_FOLDER/currency_dag.py']
+2025-05-26 22:18:22,842 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='currency_etl_dag', task_id='fetch_and_store_currency', run_id='manual__2025-05-26T19:13:14.862454+00:00', try_number=2, map_index=-1)
+2025-05-26 22:18:22,848 INFO - TaskInstance Finished: dag_id=currency_etl_dag, task_id=fetch_and_store_currency, run_id=manual__2025-05-26T19:13:14.862454+00:00, map_index=-1, run_start_date=2025-05-26 19:18:21.667230+00:00, run_end_date=2025-05-26 19:18:22.313770+00:00, run_duration=0.64654, state=failed, executor_state=success, try_number=2, max_tries=1, job_id=20, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator, queued_dttm=2025-05-26 19:18:19.580403+00:00, queued_by_job_id=18, pid=27356
+2025-05-26 22:18:23,002 ERROR - Marking run <DagRun currency_etl_dag @ 2025-05-26 19:13:14.862454+00:00: manual__2025-05-26T19:13:14.862454+00:00, state:running, queued_at: 2025-05-26 19:13:14.880174+00:00. externally triggered: True> failed
+2025-05-26 22:18:23,002 INFO - DagRun Finished: dag_id=currency_etl_dag, execution_date=2025-05-26 19:13:14.862454+00:00, run_id=manual__2025-05-26T19:13:14.862454+00:00, run_start_date=2025-05-26 19:13:15.161361+00:00, run_end_date=2025-05-26 19:18:23.002630+00:00, run_duration=307.841269, state=failed, external_trigger=True, run_type=manual, data_interval_start=2025-05-26 18:00:00+00:00, data_interval_end=2025-05-26 19:00:00+00:00, dag_hash=0ea53f5807edd8c2c8e4cef038951c36
+2025-05-26 22:22:42,124 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-05-26 22:27:49,317 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-05-26 22:32:40,108 INFO - 1 tasks up for execution:
+	<TaskInstance: currency_etl_dag.fetch_and_store_currency manual__2025-05-26T19:32:39.705980+00:00 [scheduled]>
+2025-05-26 22:32:40,108 INFO - DAG currency_etl_dag has 0/16 running and queued tasks
+2025-05-26 22:32:40,109 INFO - Setting the following tasks to queued state:
+	<TaskInstance: currency_etl_dag.fetch_and_store_currency manual__2025-05-26T19:32:39.705980+00:00 [scheduled]>
+2025-05-26 22:32:40,110 INFO - Sending TaskInstanceKey(dag_id='currency_etl_dag', task_id='fetch_and_store_currency', run_id='manual__2025-05-26T19:32:39.705980+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default
+2025-05-26 22:32:40,110 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'currency_etl_dag', 'fetch_and_store_currency', 'manual__2025-05-26T19:32:39.705980+00:00', '--local', '--subdir', 'DAGS_FOLDER/currency_dag.py']
+2025-05-26 22:32:40,119 INFO - Executing command: ['airflow', 'tasks', 'run', 'currency_etl_dag', 'fetch_and_store_currency', 'manual__2025-05-26T19:32:39.705980+00:00', '--local', '--subdir', 'DAGS_FOLDER/currency_dag.py']
+2025-05-26 22:32:43,915 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='currency_etl_dag', task_id='fetch_and_store_currency', run_id='manual__2025-05-26T19:32:39.705980+00:00', try_number=1, map_index=-1)
+2025-05-26 22:32:43,919 INFO - TaskInstance Finished: dag_id=currency_etl_dag, task_id=fetch_and_store_currency, run_id=manual__2025-05-26T19:32:39.705980+00:00, map_index=-1, run_start_date=2025-05-26 19:32:42.493220+00:00, run_end_date=2025-05-26 19:32:43.413834+00:00, run_duration=0.920614, state=success, executor_state=success, try_number=1, max_tries=1, job_id=21, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator, queued_dttm=2025-05-26 19:32:40.109437+00:00, queued_by_job_id=18, pid=28398
+2025-05-26 22:32:44,064 INFO - Marking run <DagRun currency_etl_dag @ 2025-05-26 19:32:39.705980+00:00: manual__2025-05-26T19:32:39.705980+00:00, state:running, queued_at: 2025-05-26 19:32:39.722108+00:00. externally triggered: True> successful
+2025-05-26 22:32:44,065 INFO - DagRun Finished: dag_id=currency_etl_dag, execution_date=2025-05-26 19:32:39.705980+00:00, run_id=manual__2025-05-26T19:32:39.705980+00:00, run_start_date=2025-05-26 19:32:40.073847+00:00, run_end_date=2025-05-26 19:32:44.065034+00:00, run_duration=3.991187, state=success, external_trigger=True, run_type=manual, data_interval_start=2025-05-26 18:00:00+00:00, data_interval_end=2025-05-26 19:00:00+00:00, dag_hash=385a150fc0f0c37d93cd73c0dfa4cffa
+2025-05-26 22:32:57,367 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-05-26 22:35:39,545 INFO - 1 tasks up for execution:
+	<TaskInstance: currency_etl_dag.fetch_and_store_currency manual__2025-05-26T19:35:38.514839+00:00 [scheduled]>
+2025-05-26 22:35:39,546 INFO - DAG currency_etl_dag has 0/16 running and queued tasks
+2025-05-26 22:35:39,546 INFO - Setting the following tasks to queued state:
+	<TaskInstance: currency_etl_dag.fetch_and_store_currency manual__2025-05-26T19:35:38.514839+00:00 [scheduled]>
+2025-05-26 22:35:39,547 INFO - Sending TaskInstanceKey(dag_id='currency_etl_dag', task_id='fetch_and_store_currency', run_id='manual__2025-05-26T19:35:38.514839+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default
+2025-05-26 22:35:39,547 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'currency_etl_dag', 'fetch_and_store_currency', 'manual__2025-05-26T19:35:38.514839+00:00', '--local', '--subdir', 'DAGS_FOLDER/currency_dag.py']
+2025-05-26 22:35:39,560 INFO - Executing command: ['airflow', 'tasks', 'run', 'currency_etl_dag', 'fetch_and_store_currency', 'manual__2025-05-26T19:35:38.514839+00:00', '--local', '--subdir', 'DAGS_FOLDER/currency_dag.py']
+2025-05-26 22:35:42,967 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='currency_etl_dag', task_id='fetch_and_store_currency', run_id='manual__2025-05-26T19:35:38.514839+00:00', try_number=1, map_index=-1)
+2025-05-26 22:35:42,970 INFO - TaskInstance Finished: dag_id=currency_etl_dag, task_id=fetch_and_store_currency, run_id=manual__2025-05-26T19:35:38.514839+00:00, map_index=-1, run_start_date=2025-05-26 19:35:41.858178+00:00, run_end_date=2025-05-26 19:35:42.493817+00:00, run_duration=0.635639, state=success, executor_state=success, try_number=1, max_tries=0, job_id=22, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator, queued_dttm=2025-05-26 19:35:39.546819+00:00, queued_by_job_id=18, pid=28620
+2025-05-26 22:35:43,110 INFO - Marking run <DagRun currency_etl_dag @ 2025-05-26 19:35:38.514839+00:00: manual__2025-05-26T19:35:38.514839+00:00, state:running, queued_at: 2025-05-26 19:35:38.533743+00:00. externally triggered: True> successful
+2025-05-26 22:35:43,111 INFO - DagRun Finished: dag_id=currency_etl_dag, execution_date=2025-05-26 19:35:38.514839+00:00, run_id=manual__2025-05-26T19:35:38.514839+00:00, run_start_date=2025-05-26 19:35:39.510109+00:00, run_end_date=2025-05-26 19:35:43.111076+00:00, run_duration=3.600967, state=success, external_trigger=True, run_type=manual, data_interval_start=2025-05-26 18:00:00+00:00, data_interval_end=2025-05-26 19:00:00+00:00, dag_hash=71a7865d88d5cdb50b73b7882012ecff
